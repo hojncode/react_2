@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Router from "./shared/Router";
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  // const navigate = useNavigate();
+
+  return <Router />
+  // return (
+  //   // <button
+  //   //   onClick={() => {
+  //   //     navigate("/detail")
+  //   //   }}>
+
+  //   //   detail</button>
+  // )
 }
 
 export default App;
